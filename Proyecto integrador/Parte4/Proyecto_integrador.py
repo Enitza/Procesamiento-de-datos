@@ -8,6 +8,3 @@ def descarga_datos(url):
     if response.status_code == 200:
         with open('datos.csv', 'w', encoding='utf-8') as archivo_csv:
             archivo_csv.write(response.text)
-
-descarga_datos(url)
-
